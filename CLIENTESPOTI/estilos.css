@@ -1,0 +1,319 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Navbar*/
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(7, 7, 7, 0.5);
+        position: sticky;
+        top: 0;
+    }
+    
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+    
+    .navbar ul li {
+        font-family: century;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 25px;
+        transition: all .5s ease;
+    }
+    
+    .navbar ul li a {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 10px white;
+    }
+    /*Home Selection*/
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 87)
+    }
+    
+    #home::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background: url('img/foto3.jpeg') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .8;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid white;*/
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+    
+    .headings {
+        font-family: cursive;
+        font-size: 3rem;
+        text-align: center;
+        margin: 60px 0px;
+    }
+    
+    .btn {
+        padding: 10px 35px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        outline: none;
+        transition: .6s ease;
+    }
+    
+    .btn {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        box-shadow: 0 05px rgb(17, 32, 39), 0 0 15px rgb(42, 158, 67);
+        font-weight: bold;
+    }
+    /* selection*/
+    
+    #about {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    
+    #pic {
+        display: flex;
+    }
+    
+    #pin img {
+        width: 700px;
+        height: 500px;
+    }
+    
+    #intro {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    #intro h2 {
+        font-size: 4rem;
+        margin-bottom: 40px;
+    }
+    /* seleccion portafolio*/
+    
+    #portafolio {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    
+    .galeria img {
+        width: 360;
+        height: 240;
+        margin: 10px;
+    }
+    /* seleccion servicios*/
+    
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 450px;
+        border: 1px solid black;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+        border-radius: 15px;
+        background: linear-gradient(to top, rgb(66, 117, 110) 50%, rgb(117, 117, 160) 50%);
+        background-size: 100% 200%;
+        transition: all .8s;
+    }
+    
+    .box:hover {
+        background-position: left bottom;
+        color: blanchedalmond;
+        border: none;
+        box-shadow: 0 0 30px rgb(42, 158, 67);
+    }
+    
+    .box.img {
+        width: 80;
+        height: 80;
+        background-color: white;
+        padding: 10px;
+    }
+    /*contacto*/
+    
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 20px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    
+    .input {
+        padding: 12px;
+        margin: 15px;
+        width: 30%;
+        border: none;
+        outline: none;
+    }
+    
+    #msg {
+        width: 20%;
+        padding: 10px;
+        margin: 15px;
+        border: none;
+        outline: none;
+    }
+    
+    #send {
+        padding: 10px;
+        width: 10%;
+        margin: 40px;
+        border: none;
+        outline: none;
+    }
+    
+    #send:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px green;
+    }
+    /* Footer */
+    
+    footer .redes-sociales {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    footer .redes-sociales a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: #000;
+        color: #fff;
+        margin: 20px;
+        text-align: center;
+        border-radius: 100px;
+        transition: .3s ease all;
+    }
+    
+    footer .redes-sociales .linkeden {
+        background: #1da1f2;
+    }
+    
+    footer .redes-sociales .instagram {
+        background: linear-gradient(to top, rgb(243, 31, 155) 33%, rgb(211, 110, 16) 33%, rgb(44, 5, 70) 33%);
+    }
+    
+    footer .redes-sociales .github {
+        background: #56125f;
+    }
+    
+    footer .redes-sociales .Whatsapp {
+        background: green;
+    }
+    
+    footer .redes-sociales a i {
+        font-size: 20px;
+        line-height: 60px;
+    }
+    
+    footer .contenedor-icono:hover a {
+        animation: icono .5s ease;
+    }
+    
+    @keyframes icono {
+        from {
+            transform: rotate3d(0, 0, 0, 0);
+        }
+        to {
+            transform: rotate3d(0, 1, 0, 360deg);
+        }
+    }
+    
+    footer .creado-por {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #c13584;
+    }
+    
+    footer .creado-por a {
+        color: #000;
+    }
+    
+    footer .creado-por a:hover {
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .grid .item {
+            width: calc(50% - 20px);
+        }
+        header .barra-busqueda {
+            width: 100%;
+        }
+    }
